@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+
+    <title>Ahorcado</title>
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/ahorcado.css">
+    <link rel="stylesheet" href="./styles/mediaAhorcado.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com"><!--font-family: 'Special Elite', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        
+    <script src="https://kit.fontawesome.com/1a73436153.js" crossorigin="anonymous"></script>
+
+    <script src="./scripts/ahorcado.js"></script>
+    
+</head>
+
+<body>
+    <div class="align">
+        <div class="myHeader">
+            <a id="back" class="back" href="#"><i class="fas fa-arrow-left"></i></a>
+            <h1>Te sientes listo...<i>atrévete!!</i></h1>
+        </div>
+
+        <figure class="hang">
+            <img id="hangImg" class="hang__img" src="./img//Ahorcado/portada.png" alt="">
+            <img id="hangImg2" class="hang__img" src="./img/Ahorcado/1.jpg" alt="">
+            <img id="hangImgCover" class="hang__img" src="./img/Ahorcado/1.jpg" alt="" hidden>
+            <div id="hanged" class="hanged" hidden>
+                <img id="hanged1" class="hanged__img" src="./img/Ahorcado/12.jpg" alt="">
+                <img id="hanged2" class="hanged__img" src="./img/Ahorcado/13.jpg" alt="">
+                <img id="hanged3" class="hanged__img" src="./img/Ahorcado/14.jpg" alt="">
+                <img id="hanged4" class="hanged__img" src="./img/Ahorcado/15.jpg" alt="">
+                <img id="hanged5" class="hanged__img" src="./img/Ahorcado/16.jpg" alt="">
+                <img id="hanged6" class="hanged__img" src="./img/Ahorcado/17.jpg" alt="">
+                <img id="hanged7" class="hanged__img" src="./img/Ahorcado/18.jpg" alt="">
+            </div>
+        </figure>
+
+
+        <div id="guess" class="guess"></div>
+        
+        <div class="start">
+            <input id="start__word" type="text">
+            <div class="buttons">
+                <input id="begin" class="start__button blue" type="button" value="INICIAR">
+                <input id="go" class="start__button yellow" type="button" value="GO" hidden>
+                <input id="try" class="start__button green" type="button" value="TRY" hidden>
+                <input id="reset" class="start__button red" type="button" value="RESET" hidden>
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
